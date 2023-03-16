@@ -1,0 +1,18 @@
+Les flags en programmation sont des options ou des paramètres que l'on peut donner au compilateur pour modifier son comportement. Ils sont souvent utilisés pour spécifier des options de compilation ou pour activer des vérifications supplémentaires.
+
+Les flags sont très utiles pour de nombreuses raisons, notamment pour :
+
+Optimiser le code : certains flags permettent d'optimiser le code en activant des options de compilation spécifiques.
+Vérifier la syntaxe : certains flags permettent de vérifier la syntaxe du code en signalant les erreurs de compilation et de syntaxe.
+Activer les avertissements : les flags -Wall et -Wextra sont utilisés pour activer les avertissements de compilation supplémentaires, ce qui peut aider à repérer les erreurs et les problèmes de code.
+Améliorer la sécurité : certains flags sont utilisés pour améliorer la sécurité du code, en activant des vérifications de sécurité supplémentaires ou en désactivant certaines fonctions potentiellement dangereuses.
+Les flags -Wall et -Wextra sont deux des flags les plus couramment utilisés pour activer les avertissements de compilation supplémentaires. Le flag -Wall active tous les avertissements de compilation, tandis que le flag -Wextra active des avertissements supplémentaires qui ne sont pas activés par le flag -Wall. Ces flags sont importants pour la sécurité de l'application car ils aident à repérer les erreurs et les problèmes de code qui pourraient autrement passer inaperçus, et donc potentiellement causer des problèmes de sécurité.
+
+Voici quelques exemples de flags utiles pour la sécurité des applications :
+
+-fstack-protector : ce flag active une fonctionnalité de protection contre les débordements de pile, qui peut aider à prévenir les attaques de débordement de tampon.
+-fPIE et -pie : ces flags activent l'option Position Independent Executable (PIE), qui peut aider à prévenir les attaques par rebond.
+-D_FORTIFY_SOURCE=2 : ce flag active une vérification de sécurité supplémentaire pour les fonctions dangereuses telles que strcpy et sprintf, qui peuvent être exploitées par les attaquants pour exécuter du code malveillant.
+-Wformat-security : ce flag active une vérification de sécurité pour les fonctions de formatage de chaînes, telles que printf et scanf, qui peuvent également être exploitées par les attaquants pour exécuter du code malveillant.
+-Wl,-z,relro,-z,now : ces flags activent la protection de relocation en lecture seule (RELRO) et l'exécution immédiate (PIE) pour les binaires, qui peuvent aider à prévenir les attaques d'écrasement de pointeur.
+En somme, les flags de compilation sont des options très utiles pour améliorer la sécurité et la qualité du code. Il est important de connaître et d'utiliser les flags appropriés pour chaque application afin de réduire les risques d'erreurs de sécurité et de vulnérabilités.
